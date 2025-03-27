@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esquema de Procesos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            overflow: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .container {
+            position: relative;
+            max-width: 1000px;
+            overflow: auto;
+        }
+        .popup-btn {
+            position: absolute;
+            background-color: transparent;
+            color: transparent;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .popup-btn:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image.jpg" alt="Esquema de Procesos del Laboratorio" class="img-fluid">
+        
+        <!-- Botones de popup -->
+        <button class="popup-btn" style="top: 30%; left: 19%;" data-bs-toggle="modal" data-bs-target="#popup1">Ver</button>
+        <button class="popup-btn" style="top: 83%; left: 19%;" data-bs-toggle="modal" data-bs-target="#popup2">Ver</button>
+        <button class="popup-btn" style="top: 57%; left: 25%;" data-bs-toggle="modal" data-bs-target="#popup3">Ver</button>
+        <button class="popup-btn" style="top: 57%; left: 50%;" data-bs-toggle="modal" data-bs-target="#popup4">Ver</button>
+        <button class="popup-btn" style="top: 57%; left: 77%;" data-bs-toggle="modal" data-bs-target="#popup5">Ver</button>
+        <button class="popup-btn" style="top: 67%; left: 41%;" data-bs-toggle="modal" data-bs-target="#popup3">Ver</button>
+        <button class="popup-btn" style="top: 67%; left: 68%;" data-bs-toggle="modal" data-bs-target="#popup3">Ver</button>
+    </div>
+
+    <!-- Popups -->
+    <div class="modal fade" id="popup1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">DOMICILIO</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <b>(1) Homebound (Siemens):</b><br>
+                     Sistema específico para la toma de muestras domiciliarias, proporcionando comodidad y eficiencia al realizar extracciones en el hogar del paciente. <br><br>
+                    <b><i>Impacto en la Satisfacción del Paciente</i></b><br>
+                    • Comodidad al recibir el servicio en su hogar, reduciendo desplazamientos innecesarios.<br>
+                    • Mayor seguridad y confianza en la gestión de su muestra.<br>
+                    • Agenda de fecha para toma de muestra domiciliaria.<br>
+                    • Facilidad para elegir horarios y minimizar tiempos de espera.<br>
+                    • Calificación del servicio por parte del paciente.<br>
+                    • Servicio más ágil y puntual en la toma de muestra.<br><br>
+                    <b><i>Impacto en el Personal del Laboratorio</i></b><br>
+                    • Optimiza el tiempo del personal, permitiendo organizar mejor los turnos de atención domiciliaria.<br>
+                    • Verificación en tiempo real de la toma de muestra.<br>
+                    • Generación de rutas de trabajo para el extraccionista (optimización por GPS y consumo de combustible).<br>
+                    • Reducción de tiempos de traslado y costos logísticos.<br>
+                    • Confirmación de identidad y datos clínicos en tiempo real.<br>
+                    • Impresión de códigos de barras in situ brindando seguridad y trazabilidad inmediata de la muestra.<br>
+                    • Permite mejorar la atención según el feedback recibido.<br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="popup3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">LIS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <b>(4) LIS: Sistema de información de laboratorio <br> (Roche y Siemens):</b><br><br>
+
+                    <b><i>4.1. - En la etapa preanalítica</i></b><br>
+                    • Gestión de órdenes médicas, registros de pacientes y trazabilidad de muestras, asegurando integridad y precisión en los datos. <br><br>
+                    <i><u>Impacto en la Satisfacción del Paciente: </u></i><br>
+                    Mayor confianza en la seguridad y precisión del manejo de muestras.<br>
+                    <i><u>Impacto en el Personal del Laboratorio: </u></i><br>
+                    Reduce la carga administrativa manual y mejora la organización del trabajo. <br><br><br>
+
+                    <b><i>4.2. - En la etapa analítica</i></b><br>
+                    • Automatización de la captura de datos, reduciendo errores de transcripción y mejorando la confiabilidad de los resultados.<br><br>
+                    <i><u>Impacto en la Satisfacción del Paciente: </u></i><br>
+                    Mayor confianza en la precisión de los análisis realizados.<br>
+                    <i><u>Impacto en el Personal del Laboratorio: </u></i><br>
+                    Minimiza el tiempo dedicado a la transcripción de resultados, permitiendo que el personal se enfoque en análisis y calidad.<br><br>
+                    • Interfaz con equipos de laboratorio: Conexión directa con analizadores para la transmisión automática de resultados.<br><br>
+                    <i><u>Impacto en la Satisfacción del Paciente: </u></i><br>
+                    Reducción de tiempos de espera para obtener resultados.<br>
+                    <i><u>Impacto en el Personal del Laboratorio: </u></i><br>
+                    Optimiza el tiempo de procesamiento de las muestras, mejorando la eficiencia en el laboratorio. <br><br><br>
+
+                    <b><i>4.3. - En la etapa postanalítica</i></b><br>
+                    • Ciencia de datos e inteligencia artificial aplicada al laboratorio: Permite analizar grandes volúmenes de datos para mejorar la interpretación de resultados y detectar patrones epidemiológicos. <br>
+                    • Algoritmos de autovalidación: Reducen el tiempo de emisión de informes al aplicar reglas automatizadas para validar resultados. <br><br>
+                    <i><u>Impacto en la Satisfacción del Paciente: </u></i><br>
+                    Entrega de resultados más rápida, reduciendo la ansiedad del paciente.<br>
+                    <i><u>Impacto en el Personal del Laboratorio: </u></i><br>
+                    Disminuye el tiempo que el personal superior dedica a la validación manual, permitiendo una mayor productividad.<br><br>
+                    • Optimización del tiempo de respuesta (TAT): Disminución en minutos desde la recepción de la muestra hasta la entrega del informe de resultados.<br><br>
+                    <i><u>Impacto en la Satisfacción del Paciente: </u></i><br>
+                    El paciente recibe el informe en menor tiempo<br>
+                    <i><u>Impacto en el Personal del Laboratorio: </u></i><br>
+                    Permite al personal atender más muestras en menos tiempo, aumentando la eficiencia operativa.<br><br>
+                    • Automatización de procesos administrativos: Digitalización de tareas repetitivas, agilizando la gestión documental y la comunicación con los pacientes y médicos.<br>
+                    • Almacenamiento de datos en bases de datos: Facilita análisis estadístico, estudios epidemiológicos y auditorías.<br>
+                    • Software de validación y control de calidad: Verifica automáticamente que los resultados estén dentro de rangos esperados, generando alertas en valores críticos.<br><br>
+                    <i><u>Impacto en la Satisfacción del Paciente: </u></i><br>
+                    Seguridad y confiabilidad en la entrega de informes sin errores.<br>
+                    <i><u>Impacto en el Personal del Laboratorio: </u></i><br>
+                    Facilita el trabajo del personal al reducir la necesidad de validaciones manuales, asegurando la calidad de los resultados.<br><br>
+                    • Monitoreo en tiempo real: Permite la supervisión del rendimiento de los equipos y reactivos, garantizando calidad en los análisis.<br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="popup4" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">PREANALÍTICA</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <b>(5) Instrumento preanalítico p512 (Roche):</b><br>
+                    Clasificación, inspeccion, centrifugación y distribución de muestras.<br>
+                    Disminuye tiempo de RRHH y disminuye errores.<br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="popup5" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">POSTANALÍTICA</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <b>(4) LIS: Sistema de información de laboratorio <br> (Roche y Siemens):</b><br><br>
+
+                    <b><i>4.1. - En la etapa preanalítica</i></b><br>
+                    • Gestión de órdenes médicas, registros de pacientes y trazabilidad de muestras, asegurando integridad y precisión en los datos. <br><br>
+                    <i><u>Impacto en la Satisfacción del Paciente: </u></i><br>
+                    Mayor confianza en la seguridad y precisión del manejo de muestras.<br>
+                    <i><u>Impacto en el Personal del Laboratorio: </u></i><br>
+                    Reduce la carga administrativa manual y mejora la organización del trabajo. <br><br><br>
+
+                    <b><i>4.2. - En la etapa analítica</i></b><br>
+                    • Automatización de la captura de datos, reduciendo errores de transcripción y mejorando la confiabilidad de los resultados.<br><br>
+                    <i><u>Impacto en la Satisfacción del Paciente: </u></i><br>
+                    Mayor confianza en la precisión de los análisis realizados.<br>
+                    <i><u>Impacto en el Personal del Laboratorio: </u></i><br>
+                    Minimiza el tiempo dedicado a la transcripción de resultados, permitiendo que el personal se enfoque en análisis y calidad.<br><br>
+                    • Interfaz con equipos de laboratorio: Conexión directa con analizadores para la transmisión automática de resultados.<br><br>
+                    <i><u>Impacto en la Satisfacción del Paciente: </u></i><br>
+                    Reducción de tiempos de espera para obtener resultados.<br>
+                    <i><u>Impacto en el Personal del Laboratorio: </u></i><br>
+                    Optimiza el tiempo de procesamiento de las muestras, mejorando la eficiencia en el laboratorio. <br><br><br>
+
+                    <b><i>4.3. - En la etapa postanalítica</i></b><br>
+                    • Ciencia de datos e inteligencia artificial aplicada al laboratorio: Permite analizar grandes volúmenes de datos para mejorar la interpretación de resultados y detectar patrones epidemiológicos. <br>
+                    • Algoritmos de autovalidación: Reducen el tiempo de emisión de informes al aplicar reglas automatizadas para validar resultados. <br><br>
+                    <i><u>Impacto en la Satisfacción del Paciente: </u></i><br>
+                    Entrega de resultados más rápida, reduciendo la ansiedad del paciente.<br>
+                    <i><u>Impacto en el Personal del Laboratorio: </u></i><br>
+                    Disminuye el tiempo que el personal superior dedica a la validación manual, permitiendo una mayor productividad.<br><br>
+                    • Optimización del tiempo de respuesta (TAT): Disminución en minutos desde la recepción de la muestra hasta la entrega del informe de resultados.<br><br>
+                    <i><u>Impacto en la Satisfacción del Paciente: </u></i><br>
+                    El paciente recibe el informe en menor tiempo<br>
+                    <i><u>Impacto en el Personal del Laboratorio: </u></i><br>
+                    Permite al personal atender más muestras en menos tiempo, aumentando la eficiencia operativa.<br><br>
+                    • Automatización de procesos administrativos: Digitalización de tareas repetitivas, agilizando la gestión documental y la comunicación con los pacientes y médicos.<br>
+                    • Almacenamiento de datos en bases de datos: Facilita análisis estadístico, estudios epidemiológicos y auditorías.<br>
+                    • Software de validación y control de calidad: Verifica automáticamente que los resultados estén dentro de rangos esperados, generando alertas en valores críticos.<br><br>
+                    <i><u>Impacto en la Satisfacción del Paciente: </u></i><br>
+                    Seguridad y confiabilidad en la entrega de informes sin errores.<br>
+                    <i><u>Impacto en el Personal del Laboratorio: </u></i><br>
+                    Facilita el trabajo del personal al reducir la necesidad de validaciones manuales, asegurando la calidad de los resultados.<br><br>
+                    • Monitoreo en tiempo real: Permite la supervisión del rendimiento de los equipos y reactivos, garantizando calidad en los análisis.<br> <br> <br> <br>
+
+                    <b>(6) Gestión de insumos <br> (Roche y Siemens):</b><br><br>
+                    • Optimización en el manejo de inventarios y suministros
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="popup2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">CLÍNICAS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <b>(4) SkyLab: Estación de trabajo y dispensadores de tubos para toma de muestra intramural (Siemens):</b><br><br>
+                    <i><u>Impacto en la Satisfacción del Paciente: </u></i><br>
+                    • Calificación del servicio por parte de los pacientes: los pacientes pueden dejar comentarios sobre la atención recibida.<br>
+                    • Evita casos de suplantación: consulta de la información en línea registrada en el área administrativa en el punto de toma de muestra. <br>
+                    • Mejora los tiempos de atención: impresión de etiquetas con códigos de barras directamente en el punto de muestra.  <br>
+                    • Agiliza el proceso de toma de muestra y mejora la experiencia del paciente al minimizar tiempos de espera y garantizar una atención más rápida.<br><br>
+                    <i><u>Impacto en el Personal del Laboratorio: </u></i><br>
+                    • Llamado del turno del paciente desde cada punto de toma de muestra: evita el desplazamiento innecesario del personal y mejora la calidad del servicio. <br>
+                    • Optimización de la estación de trabajo para la toma de muestras, y uso de dispensadores automáticos de tubos, garantizando un flujo rápido y eficiente dentro del laboratorio. <br>
+                    • Registro automatizado: mediante lectura de código de barras, registra el nombre del extraccionista, fecha, hora de la muestra tomada y las condiciones del paciente en el momento de la toma de muestra.<br>
+                    • Mejora la eficiencia operativa y reduce la carga de trabajo manual al automatizar varios pasos del proceso de toma de muestra.<br> <br> <br> <br>
+
+
+                    <b>(3) SIGA: Software de Automatización de Turnos de Atención (Siemens):</b><br><br>
+                    • Automatización de la programación de citas, optimizando los tiempos de atención y mejorando la gestión de recursos.
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
